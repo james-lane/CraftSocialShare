@@ -1,0 +1,10 @@
+{% import "_includes/forms" as forms %}
+{{ forms.textField({
+        label: "Facebook App ID"|t,
+        id: 'appId',
+        name: 'appId',
+        instructions: "Insert Your Facebook App ID"|t,
+        value: settings.appId,
+        errors: settings.getErrors('appId')
+    })
+}}
